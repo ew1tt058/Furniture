@@ -1,0 +1,22 @@
+{
+  "name": "furniture",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ew1tt058/Furniture.git"
+  },
+  "author": "Tykhon Illia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ew1tt058/Furniture/issues"
+  },
+  "homepage": "https://github.com/ew1tt058/Furniture#readme",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
