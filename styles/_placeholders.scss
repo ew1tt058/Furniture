@@ -1,0 +1,20 @@
+@use '_variables.scss' as v;
+
+%hover-text {
+    transition: 0.4s ease;
+
+    &:hover {
+        font-size: 35px ;
+        font-weight: 800;
+        color: v.$color_lime;
+        text-shadow: 0 0 10px v.$color_black;
+    }
+}
+
+%hover {
+    transition: 0.4s ease;
+    &:hover {
+        color: v.$color_lime;
+        text-shadow: 0 0 13px v.$color_black;
+    }
+}
