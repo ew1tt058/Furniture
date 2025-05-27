@@ -1,12 +1,17 @@
 * {
     box-sizing: border-box;
     margin: 0;
+  outline: 1px solid red;
+
+
 }
 
 
 body {
     font-family:'Inter';
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6,ul,p,button {
 
@@ -30,6 +35,9 @@ blockquote{
 figure {
     margin: 0;
 }
+svg {
+display: block;
+}
 
 hr{
     margin: 0;
@@ -39,7 +47,7 @@ hr{
 html {
     scroll-behavior: smooth;
 }
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
+
+.landing__page-content{
+
 }

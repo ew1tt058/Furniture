@@ -2,21 +2,34 @@
 @use'_mixins.scss' as m;
 @use'_placeholders.scss' ;
 
+.container{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+
 .header {
     @include m.d-flex(center, center);
-    
-    width: 1440px;
+    width: 100%;
     height: 140px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
 .header__nav {
-    padding: 0 0 0 190px;
     @include m.d-flex(start, center);
 }
 
 .header__icon-preview {
     width: 48px;
     height: 48px;
+
+    
 }
 .nav__title {
     padding: 10px;
@@ -51,41 +64,41 @@
 
 
 .nav__buttons {
-    @include m.d-flex(end, center, nowrap, row, min(100px, 5vw), 0);
-}
+    @include m.d-flex(end, center, nowrap, row, min(200px, 5vw), 0);
 
-.nav__buttons-signup {
-    width: 107px;
-    height: 48px;
-    padding: 12px;
-    margin: 0 0 0 182px;
-    border: none;
-    border-radius: 10px;
-    background-color: v.$color_lime;
-    @include m.font(16px, 300, v.$color_brow);
-    transition: 0.4s ease;
-    &:hover {
-        cursor: pointer;
-            box-shadow: 0px 0px 20px v.$color_black;
-            background-color: v.$color_brow;
-            @include m.font(16px, 300, v.$color_lime);
+    &-signup {
+        width: 107px;
+        height: 48px;
+        padding: 12px;
+        margin-left: auto;
+        border: none;
+        border-radius: 10px;
+        background-color: v.$color_lime;
+        @include m.font(16px, 300, v.$color_brow);
+        transition: 0.4s ease;
+        &:hover {
+            cursor: pointer;
+                box-shadow: 0px 0px 20px v.$color_black;
+                background-color: v.$color_brow;
+                @include m.font(16px, 300, v.$color_lime);
+        }
     }
-}
-.nav__buttons-icon{
-    width: 48px;
-    height: 48px;
-    margin: 0px 100px 0px -80px;
-    @include m.d-flex(center, center);
-    &:hover {
-        cursor: pointer;
+    &-icon{
+        width: 48px;
+        height: 48px;
+        margin: 0px 0 0px -80px;
+        @include m.d-flex(center, center);
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
 
 .basked-icon{
+    display: block;
     width: 48px;
     height: 48px;
-    border-radius: 10px;
-
-    
+    border-radius: 12px;
+    background-color: v.$color_darkbrow;
 }
