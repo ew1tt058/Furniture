@@ -1,103 +1,126 @@
 @use'_variables.scss' as v;
 @use'_mixins.scss' as m;
-@use'_placeholders.scss' ;
+@use'_placeholders.scss';
 
-.hero__container{
+.hero__container {
     position: relative;
-        @include m.d-flex(space-between, center, nowrap, row);
-        width: 100%;
-        overflow-x: hidden;
+    @include m.d-flex(space-between, center, nowrap, row);
+    width: 100%;
+    overflow-x: hidden;
 
-}
-
-.hero__title{
+    &-title {
         width: 100%;
         height: 710px;
-        @include m.d-flex(center, center,nowrap,column,0,70px);
-        
-        &-description{
+        @include m.d-flex(center, center, nowrap, column, 0, 70px);
+
+        .catalog__icon {
+            width: 25px;
+            height: 20px;
+            margin: 0 12px 0 0;
+        }
+    }
+
+    &-description {
         max-width: 695px;
         @include m.font(72px, 800, v.$color_brow);
+
+        @media (max-width:v.$media_xl){
+                max-width: 625px;
+        }
     }
 
-    .catalog__icon{
-        width: 25px;
-        height: 20px;
-        margin: 0 12px 0 0;
-    }
-    &-buttons{
-        
-        @include m.d-flex(center, center,nowrap,row,25px,0);
-    }
-    .buttons__catalog{
-        width: 340px;
-        height: 80px;
-        border: none;
-        border-radius: 12px;
-        background-color: v.$color_lime;
-        @include m.font(22px, 300, v.$color_brow);
-        @include m.d-flex(center, center,row);
-        @extend %hover-button-peach;
-    }
-    .buttons__watch{
-        width: 340px;
-        height: 80px;
-        background: none;
-        border-radius: 12px;
-        border: 1px solid v.$color_brow;
-        @include m.font(22px, 300, v.$color_brow);
-        @include m.d-flex(center, center,row);
-        @extend %hover-button-lemon;
+    &-buttons {
+
+        @include m.d-flex(center, center, nowrap, row, 25px, 0);
     }
 }
-.desc__furniture{
-@include m.font(72px, 800, v.$color_lightbrow);
+
+.buttons__catalog {
+    width: 340px;
+    height: 80px;
+    border: none;
+    border-radius: 12px;
+    background-color: v.$color_lime;
+    @include m.font(22px, 300, v.$color_brow);
+    @include m.d-flex(center, center, row);
+    @extend %hover-button-peach;
+
+    @media (max-width:v.$media_xl){
+                    width: 300px;
+                    margin:10px;
+        }
 }
 
-.hero__review{
-        background: url(/assets/img/background.webp)no-repeat center / cover;
-        width: 100%;
-        max-width: 670px;
-        height: 710px;
-        flex-shrink: 1;
-        padding: 0 0 0 48px;
-        @include m.d-flex(end , start,nowrap,column);
+.buttons__watch {
+    width: 340px;
+    height: 80px;
+    background: none;
+    border-radius: 12px;
+    border: 1px solid v.$color_brow;
+    @include m.font(22px, 300, v.$color_brow);
+    @include m.d-flex(center, center, row);
+    @extend %hover-button-lemon;
+
+    @media (max-width:v.$media_xl){
+                    width: 300px;
+                    margin:0 15px 0 0;
+        }
+}
+
+.desc__furniture {
+    @include m.font(72px, 800, v.$color_lightbrow);
+}
+
+.hero__review {
+    background: url(/assets/img/background.webp)no-repeat center / cover;
+    width: 100%;
+    max-width: 670px;
+    height: 710px;
+    flex-shrink: 1;
+    padding: 0 0 0 48px;
+    @include m.d-flex(end, start, nowrap, column);
+
+    
+    &-price {
+        width: 90px;
+        height: 40px;
+        border-radius: 12px;
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        @include m.font(24px, 400, v.$color_brow);
+        @include m.d-flex(center, center);
     }
-        .review__price{
-            width: 90px;
-            height: 40px;
-            border-radius: 12px;
-            background-color: rgba($color: #fff, $alpha: 0.5);
-            @include m.font(24px, 400, v.$color_brow);
-            @include m.d-flex(center , center);
 
 
-        }
-        .review__description{
-            padding: 8px 0 16px 0;
-            @include m.font(64px, 400, v.$color_white);
-        }
-
-        .review__button{
+    &-description {
+        padding: 8px 0 16px 0;
+        @include m.font(64px, 400, v.$color_white);
+    }
+    
+    &-button {
         width: 200px;
         height: 56px;
         margin: 0 0 87px 0;
         border-radius: 12px;
         background-color: v.$color_brow;
         @extend %hover-button-peach;
-        @include m.d-flex(center , center);
+        @include m.d-flex(center, center);
         @include m.font(16px, 300, v.$color_white);
-        &:hover{
-        @include m.font(16px, 400, v.$color_black);
+    
+        &:hover {
+            @include m.font(16px, 400, v.$color_black);
         }
+    
+    }
+}
 
-        }
 
-        .button-chevron{
-            width: 20px; 
-            height: 20px;
-            padding: 0 0 0 10px;
-            &:hover{
+
+.button-chevron {
+    width: 20px;
+    height: 20px;
+    padding: 0 0 0 10px;
+
+    &:hover {
         @include m.font(16px, 200, v.$color_black);
-        }
-        }
+    }
+}

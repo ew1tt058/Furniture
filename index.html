@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/dist/index.css">
     <link rel="icon" href="/assets/sprites.svg#icon">
     <title>Furniture</title>
@@ -17,36 +19,36 @@
         <div class="container">
 
             <nav class="header__nav nav">
-                
+
                 <div class="header__icon">
                     <a href="#" class="header__icon-link" aria-label="header icon link">
                         <svg class="header__icon-preview" aria-label="header icon preview">
-                            <use  href="/assets/sprites.svg#icon"> </use>
+                            <use href="/assets/sprites.svg#icon"> </use>
                         </svg>
                     </a>
                 </div>
-                
+
                 <div class="nav__title">
-                    <a href="#" class="nav__title-link" >Dekoor</a>
+                    <a href="#" class="nav__title-link">Dekoor</a>
                 </div>
 
 
                 <div class="nav__links">
                     <ul class="nav__links-list list" aria-label="header nav links">
-                        <li class="list__item about">
-                            <a href="#" class="list__item-links list">About us</a>
+                        <li class="nav__links-item about">
+                            <a href="#" class="nav__links-list">About us</a>
                         </li>
-                        <li class="list__item furniture">
-                            <a href="#" class="list__item-links list"> Furniture</a>
+                        <li class="nav__links-item furniture">
+                            <a href="#" class="nav__links-list "> Furniture</a>
                         </li>
-                        <li class="list__item partnership">
-                            <a href="#" class="list__item-links list">Partnership</a>
+                        <li class="nav__links-item partnership">
+                            <a href="#" class="nav__links-list">Partnership</a>
                         </li>
-                        <li class="list__item contact">
-                            <a href="#" class="list__item-links list">Contact</a>
+                        <li class="nav__links-item contact">
+                            <a href="#" class="nav__links-list">Contact</a>
                         </li>
                         <li>
-                            
+
                         </li>
                     </ul>
                 </div>
@@ -65,19 +67,49 @@
         </div>
     </header>
     <div class="landing__page-content">
-        <hero class="hero__container hero">
-            <div class="hero__title hero">
-                <p class="hero__title-description desc">The kind of <span class="desc__furniture">furniture</span> you have been looking for</p>
-                <div class="hero__title-buttons buttons">
-                    <a href="#" class="buttons__catalog catalog"><svg class="catalog__icon catalog"><use class="catalog__search-icon" href="./assets/sprites.svg#search"></use></svg>SEARCH CATALOG</a>
-                    <a href="#" class="buttons__watch"><svg class="catalog__icon catalog"><use class="catalog__search-icon" href="./assets/sprites.svg#watch"></use></svg>WATCH VIDEO</a>
+        <section class="hero__container hero">
+            <div class="hero__container-title ">
+                <p class="hero__container-description ">The kind of <span class="desc__furniture">furniture</span> you
+                    have been looking for</p>
+                <div class="hero__container-buttons">
+                    <a href="#" class="buttons__catalog catalog"><svg class="catalog__icon catalog">
+                            <use class="catalog__search-icon" href="./assets/sprites.svg#search"></use>
+                        </svg>SEARCH CATALOG</a>
+                    <a href="#" class="buttons__watch"><svg class="catalog__icon catalog">
+                            <use class="catalog__search-icon" href="./assets/sprites.svg#watch"></use>
+                        </svg>WATCH VIDEO</a>
                 </div>
             </div>
-            <div class="hero__review review">
-                <div class="review__price">$329</div>
-                <p class="review__description">Pösht Sofa</p>
-                <a href="#" class="review__button">VIEW DETAILS<svg class="button-chevron"><use class="cevron-icon" href="./assets/sprites.svg#chevron-right"></use></svg> </a>
-    </div>
+
+            <div class="hero__review ">
+                <div class="hero__review-price">$329</div>
+                <p class="hero__review-description">Pösht Sofa</p>
+                <a href="#" class="hero__review-button">VIEW DETAILS<svg class="button-chevron">
+                        <use class="cevron-icon" href="./assets/sprites.svg#chevron-right"></use>
+                    </svg> </a>
+            </div>
+        </section>
+
+        <main class="main__content">
+            <div class="why__us">
+                <div class="why__us-title">WHY CHOOSE US?</div>
+                <div class="why__us-description">We care about details and the quality of our products</div>
+                <div class="why__us-experience experience">
+                        <svg class="search-item">
+                                    <use class="search-icon" href="/assets/sprites.svg#search-second"></use>
+                                </svg>
+                    <div class="experience-quality quality">MANUFACTURED WITH QUALITY MATERIALS</div>
+                    <div class="quality-item">
+                        <p class="quality-icon" >5</p>
+                    </div>
+                    <div class="experience-warranty">5 YEARS OF WARRANTY FOR EACH PROFUCT</div>
+                    <svg class="expertise-item">
+                                <use class="expertise-icon" href="assets/sprites.svg#expertise"></use>
+                            </svg>
+                    <div class="experience-expertise">20 YEARS OF EXPERTISE</div>
+                </div>
+            </div>
+        </main>
 </body>
 
 </html>
