@@ -1,0 +1,104 @@
+@use'_variables.scss' as v;
+@use'_mixins.scss' as m;
+@use'_placeholders.scss' ;
+
+.partnered{
+    &__container{
+    width: 100%;
+    height: 300px;
+    background-color: v.$color_whitesmooth;
+    @include m.d-flex(start, center, nowrap, row, 0, 0);
+        
+    @media (max-width:v.$media_lg){
+            @include m.d-flex(start, center, nowrap, column, 0, 45px);
+        }
+    @media (max-width:v.$media_sm){
+            @include m.d-flex(start, center, nowrap, column, 0, 25px);
+        }
+}
+    
+    &__content{
+        padding: 0 0 0 142px;
+        @media (max-width:v.$media_xl){
+            padding: 0 0 0 70px;      
+        }
+        @media (max-width:v.$media_lg){
+        padding:0;        
+        }
+
+        &-title{
+        padding:35px 0 0 0;
+    @include m.font(96px, 900, v.$color_brow);
+
+    @media (max-width:v.$media_lg){
+                width: 100%;
+            @include m.d-flex(center, center, nowrap, column, 0, 0);
+                // padding:30px 0 15px 0;
+        }
+        @media (max-width:v.$media_md){
+        padding:20px 0 10px 0;
+        @include m.font(50px, 700, v.$color_brow);
+        
+        }
+        @media (max-width:v.$media_md){
+        padding:20px 0 10px 20px;
+        
+        
+        }
+        }
+
+        &-description{
+            width: 100px;
+        @include m.font(24px, 300, v.$color_brow);
+        @media (max-width:v.$media_lg){
+            width: 100%;
+            @include m.d-flex(center, center, nowrap, column, 0, 45px);
+
+        }
+
+        }
+
+        &-text{
+            white-space: nowrap;
+        }
+    }
+    
+&__logos{
+@include m.d-flex(center, center, nowrap, row, 90px, 0);
+width: 100%;
+height: 40px;
+@media (max-width:v.$media_xl){
+        @include m.d-flex(center, center, nowrap, row, 65px, 0);
+        }
+
+@media (max-width:v.$media_sm){
+        @include m.d-flex(center, center, nowrap, column, 0, 30px);
+        height: 100%;
+        }
+
+&-gusto{
+    width: 110px;
+    height: 50px;
+    padding: 10px 0 0 0;
+}
+&-stripe{
+    width: 90px;
+    height: 50px;
+    padding: 10px 0 0 0;
+
+}
+&-treehouse{
+    width: 180px;
+    height: 50px;
+}
+&-upwork{
+    width: 130px;
+    height: 50px;
+}
+
+}
+
+}
+
+
+
