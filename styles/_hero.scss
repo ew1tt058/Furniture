@@ -7,12 +7,18 @@
     @include m.d-flex(space-between, center, nowrap, row);
     width: 100%;
     overflow-x: hidden;
+    @media (max-width:v.$media_md){
+            @include m.d-flex(space-between, center, nowrap, column);
+    }
 
     &-title {
         width: 100%;
         height: 710px;
         @include m.d-flex(center, center, nowrap, column, 0, 70px);
 
+    @media (max-width:v.$media_md){
+            @include m.d-flex(space-evenly, center, nowrap, column, 0, 35px);
+    }
         .catalog__icon {
             width: 25px;
             height: 20px;
@@ -27,11 +33,19 @@
         @media (max-width:v.$media_xl){
                 max-width: 625px;
         }
+
+        @media (max-width:v.$media_sm){
+                padding: 0 0 0 25px;
+        }
+
     }
 
     &-buttons {
-
         @include m.d-flex(center, center, nowrap, row, 25px, 0);
+        @media (max-width:v.$media_md){
+            @include m.d-flex(center, center, nowrap, column, 25px, 0);
+
+    }
     }
 }
 
@@ -49,6 +63,9 @@
                     width: 300px;
                     margin:10px;
         }
+    @media (max-width:v.$media_md){
+                    margin:0 0 10px 0;
+        }
 }
 
 .buttons__watch {
@@ -65,6 +82,10 @@
                     width: 300px;
                     margin:0 15px 0 0;
         }
+    @media (max-width:v.$media_md){
+                    width: 300px;
+                    margin:0;
+        }
 }
 
 .desc__furniture {
@@ -79,8 +100,23 @@
     flex-shrink: 1;
     padding: 0 0 0 48px;
     @include m.d-flex(end, start, nowrap, column);
+    @media (max-width:v.$media_md){
+    padding: 0;
+    height: 420px;
+    max-width:100%;
+    padding: 0 0 0 16px;
+    background:url(/assets/img/background.webp)no-repeat center / cover;   
+}
+&-highlighted{
+    display: none;
+    @media (max-width:v.$media_md){
+    display: inline;
+    padding: 0 0 90px 0;
+    @include m.font(24px, 300, v.$color_white);
 
     
+}
+} 
     &-price {
         width: 90px;
         height: 40px;
@@ -88,12 +124,20 @@
         background-color: rgba($color: #fff, $alpha: 0.5);
         @include m.font(24px, 400, v.$color_brow);
         @include m.d-flex(center, center);
+        @media (max-width:v.$media_md){
+            width: 120px;
+            height: 60px;
+            @include m.font(24px, 400, v.$color_brow);
+    } 
     }
 
 
     &-description {
         padding: 8px 0 16px 0;
         @include m.font(64px, 400, v.$color_white);
+        @media (max-width:v.$media_md){
+            @include m.font(64px, 300, v.$color_white);
+    } 
     }
     
     &-button {
@@ -105,6 +149,13 @@
         @extend %hover-button-peach;
         @include m.d-flex(center, center);
         @include m.font(16px, 300, v.$color_white);
+
+        @media (max-width:v.$media_md){
+        width: 320px;
+        height: 80px;
+        margin: 0 0 30px 0;
+        @include m.font(16px, 300, v.$color_white); 
+    } 
     
         &:hover {
             @include m.font(16px, 400, v.$color_black);
