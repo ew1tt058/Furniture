@@ -1,0 +1,60 @@
+@use'_variables.scss' as v;
+@use'_mixins.scss' as m;
+@use'_placeholders.scss' ;
+
+.deals{
+    height: 510px;
+    background-color: v.$color_whitesmooth;
+
+    &-info{
+        height: 300px;
+        @include m.d-flex(center,center,nowrap,column,0,42px);
+
+        &__title{
+            padding: 80px 0 0 0;
+            @include m.font(24px,400,v.$color_brow);
+        }
+
+        &__description{
+            width: 1100px;
+            @include m.font(60px,800,v.$color_brow);
+            white-space: wrap;
+
+        }
+    }
+
+    &-contact{
+        @include m.d-flex(center,center,nowrap,row,0,0);
+        padding: 42px 0 0 0;
+        &__email{
+            width: 500px;
+            border: none;
+            height: 80px;
+            padding: 0 0 0 30px;
+            border-radius: 10px 0 0 10px;
+            @include m.font(30px,400,v.$color_black);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+
+        }
+        &__button{
+            width: 80px;
+            height: 80px;
+            border: none;
+            cursor: pointer;
+            border-radius: 0 10px 10px 0;
+            background-color: v.$color_lime;
+            @include m.d-flex(center,center);
+            @extend %hover-button-peach;
+            
+
+
+            &-icon{
+                width: 30px;
+                height: 20px;
+                        @include m.d-flex(center,center);
+
+            }
+        }
+
+    }
+}

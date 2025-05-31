@@ -36,7 +36,7 @@
                 <div class="nav__links">
                     <ul class="nav__links-list list" aria-label="header nav links">
                         <li class="nav__links-item about">
-                            <a href="#" class="nav__links-list">About us</a>
+                            <a href="#about-us" class="nav__links-list">About us</a>
                         </li>
                         <li class="nav__links-item furniture">
                             <a href="#" class="nav__links-list "> Furniture</a>
@@ -97,7 +97,7 @@
         </section>
 
         <main class="main__content">
-            <section class="why__us">
+            <section id="about-us" class="why__us">
                 <div class="why__us-title">WHY CHOOSE US?</div>
                 <div class="why__us-description">We care about details and the quality of our products</div>
                 <div class="why__us-experience experience">
@@ -185,7 +185,21 @@
                     </button>   
                 </div>   
             </section>
-            
+            <section class="deals">
+                <div class="deals-info">
+                    <h3 class="deals-info__title">LIMITED DEALS</h3>
+                    <p class="deals-info__description">Become a member and get 10% off of your first purchase</p>
+                </div>
+                <form class="deals-contact">
+                    <input type="email" class="deals-contact__email" placeholder="Enter your email here" required>
+                    <button type="submit" class="deals-contact__button">
+                        <svg class="deals-contact__button-icon">
+                            <use width="30" height="20" class="deals-contact__button-icon" href="/assets/sprites.svg#email">   
+                            </use>
+                        </svg>
+                    </button>
+                </form>
+            </section>
         </main>
 </body>
 
