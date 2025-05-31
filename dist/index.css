@@ -1216,11 +1216,6 @@ html {
     border-radius: 12px;
   }
 }
-@media (max-width: 428px) {
-  .recommendation__cards-cozy {
-    background: url(../assets/img/cozy.webp) no-repeat center center/contain;
-  }
-}
 .recommendation__cards-creative {
   width: 470px;
   height: 520px;
@@ -1229,7 +1224,7 @@ html {
 }
 @media (max-width: 992px) {
   .recommendation__cards-creative {
-    width: 200px;
+    width: 220px;
     height: 200px;
     border-radius: 12px;
   }

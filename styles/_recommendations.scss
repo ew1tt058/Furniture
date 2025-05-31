@@ -46,9 +46,6 @@
                 height: 200px;
                 border-radius: 12px;
             }
-
-
-       
         }
 
         &-creative {
@@ -58,7 +55,7 @@
             background: url(../assets/img/creative.webp) no-repeat center center/ contain;
 
             @media (max-width:v.$media_lg) {
-                width: 200px;
+                width: 220px;
                 height: 200px;
                 border-radius: 12px;
                 
