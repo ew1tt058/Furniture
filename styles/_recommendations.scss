@@ -6,6 +6,7 @@
 .recommendation {
     height: 690px;
     @include m.d-flex(start, center, nowrap, row, 45px, 0);
+    padding: 0 0 0 30px;
 
     &__cards {
         @include m.d-flex(start, center, nowrap, row, 25px, 0);
@@ -158,11 +159,16 @@
         }
     }
 
+    @media (max-width:v.$media_xl) {
+        padding: 0;
+    }
     @media (max-width:v.$media_lg) {
         margin: 10px;
         height: 100%;
         @include m.d-flex(start, center, nowrap, column-reverse, 0, 30px);
     }
+
+
 }
 
 .variables {
