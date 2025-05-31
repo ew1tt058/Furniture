@@ -28,6 +28,7 @@
                 border-radius: 12px;
             }
             @media (max-width:v.$media_min) {
+
                 background: url(../assets/img/modern.webp) no-repeat center center/ contain;
 
             }
@@ -45,10 +46,9 @@
                 height: 200px;
                 border-radius: 12px;
             }
-            @media (max-width:v.$media_min) {
-                background: url(../assets/img/cozy.webp) no-repeat center center/ contain;
 
-            }
+
+       
         }
 
         &-creative {
