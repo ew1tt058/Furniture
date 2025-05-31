@@ -72,8 +72,9 @@ height: 40px;
         }
 
 @media (max-width:v.$media_sm){
-        @include m.d-flex(center, center, nowrap, column, 0, 30px);
-        height: 100%;
+        display: grid;
+        row-gap: 25px;
+        grid-template-columns: repeat(2,0fr);
         }
 
 &-gusto{

@@ -108,13 +108,10 @@
     }
 }
 
-.quality__icon {
-    width: 40px;
-    height: 40px;
-
-}
 
 .search-item {
+    width: 70px;
+    height: 45px;
     padding: 7px;
     color: #ffff;
     border-radius: 12px;
@@ -141,6 +138,8 @@
 
 .expertise-item {
     color: #ffff;
+    width: 70px;
+    height: 45px;
     @extend %size-icon;
     border-radius: 12px;
     background-color: rgba($color: v.$color_lime, $alpha: 50%);
@@ -169,6 +168,8 @@
 .quality-item {
     color: #ffff;
     @extend %size-icon;
+    width: 70px;
+    height: 45px;
     border-radius: 12px;
     @include m.font(24px, 500);
     @include m.d-flex(center, center);
