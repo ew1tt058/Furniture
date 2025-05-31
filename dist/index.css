@@ -1169,6 +1169,7 @@ html {
   flex-direction: row;
   column-gap: 45px;
   row-gap: 0;
+  padding: 0 0 0 30px;
 }
 .recommendation__cards {
   display: flex;
@@ -1375,6 +1376,11 @@ html {
     flex-direction: column;
     column-gap: 0;
     row-gap: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .recommendation {
+    padding: 0;
   }
 }
 @media (max-width: 992px) {

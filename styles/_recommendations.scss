@@ -6,6 +6,7 @@
 .recommendation {
     height: 690px;
     @include m.d-flex(start, center, nowrap, row, 45px, 0);
+    padding: 0 0 0 30px;
 
     &__cards {
         @include m.d-flex(start, center, nowrap, row, 25px, 0);
@@ -27,7 +28,9 @@
                 border-radius: 12px;
             }
             @media (max-width:v.$media_min) {
-            background: url(../assets/img/modern.webp) no-repeat center center/ contain;    
+
+                background: url(../assets/img/modern.webp) no-repeat center center/ contain;
+
             }
         }
 
@@ -44,9 +47,8 @@
                 border-radius: 12px;
             }
 
-            @media (max-width:v.$media_min) {
-            background: url(../assets/img/cozy.webp) no-repeat center center/ contain;    
-            }
+
+       
         }
 
         &-creative {
@@ -59,6 +61,7 @@
                 width: 200px;
                 height: 200px;
                 border-radius: 12px;
+                
             }
         }
 
@@ -156,11 +159,16 @@
         }
     }
 
+    @media (max-width:v.$media_xl) {
+        padding: 0;
+    }
     @media (max-width:v.$media_lg) {
         margin: 10px;
         height: 100%;
         @include m.d-flex(start, center, nowrap, column-reverse, 0, 30px);
     }
+
+
 }
 
 .variables {
