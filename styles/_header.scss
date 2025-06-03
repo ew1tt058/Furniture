@@ -54,7 +54,6 @@
     height: 24px;
     transition: 0.4s ease;
     &:hover {
-
             cursor: pointer;
             width: 30px;
             height: 30px;
@@ -65,12 +64,15 @@
         
     }
 
+    @media(max-width:v.$media_lg){
+        margin: 0 10px 0 0 ;
+    }
 }
 
 
-.nav__title {
+.nav__title {   
     padding: 10px;
-    @include m.font(30px, 900, v.$color_brow);
+    @include m.font(20px, 900, v.$color_brow);
     @extend %hover;
 }
 
@@ -139,7 +141,7 @@
         margin-left: 90px;     
             }
         @media (max-width:v.$media_xl){
-        margin-left: 0;     
+        margin-left: 40px;     
             }
     }
     &-icon{

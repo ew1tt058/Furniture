@@ -79,14 +79,14 @@
 }
 
 .experience {
-    @include m.d-flex(center, start, nowrap, row, 64px, 0);
+    @include m.d-flex(center, center, wrap, row, 16px, 0);
 
     @media (max-width: v.$media_xxl) {
         @include m.d-flex(center, start, nowrap, row, 18px, 0);
     }
 
     @media (max-width: v.$media_lg) {
-        @include m.d-flex(center, center, nowrap, row, 10px, 0);
+        @include m.d-flex(center, start, nowrap, row, 10px, 0);
     }
     
     @media (max-width: v.$media_md) {
@@ -107,6 +107,7 @@
 
     }
 }
+
 
 
 .search-item {
