@@ -92,10 +92,10 @@
         @include m.d-flex(center, start, nowrap, row, 100px, 0);
 
         &-loff {
-            background: url("/assets/img/loff.webp") no-repeat center center;
             border-radius: 20px;
             padding: 0 0 25px 24px;
             transition: 0.3s ease;
+            background: url("assets/img/loff.webp") no-repeat center center;
 
             &:hover {
                 width: 300px;
@@ -128,10 +128,10 @@
         }
 
         &-sofa {
-            background: url("/assets/img/sofa.webp") no-repeat center center;
             border-radius: 20px;
             padding: 0 0 25px 24px;
             transition: 0.3s ease;
+            background: url("assets/img/sofa.webp") no-repeat center center;
 
             &:hover {
                 width: 300px;
@@ -164,10 +164,10 @@
         }
 
         &-table {
-            background: url("/assets/img/table.webp") no-repeat center center;
             border-radius: 20px;
             padding: 0 0 25px 24px;
             transition: 0.3s ease;
+            background: url("assets/img/table.webp") no-repeat center center;
 
             &:hover {
                 width: 300px;
@@ -204,11 +204,11 @@
         }
 
         &-shelf {
-            background: url("/assets/img/shelf.webp") no-repeat center center;
             border-radius: 20px;
             padding: 0 0 25px 24px;
             transition: 0.3s ease;
-
+            background: url("assets/img/shelf.webp") no-repeat center center;
+            
             &:hover {
                 width: 300px;
                 height: 470px;
