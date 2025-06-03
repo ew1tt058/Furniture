@@ -1,110 +1,302 @@
-@use'_variables.scss' as v;
-@use'_mixins.scss' as m;
-@use'_placeholders.scss' ;
+@use "_variables.scss" as v;
+@use "_mixins.scss" as m;
+@use "_placeholders.scss";
 
+.our-products {
+    height: 100%;
+    max-height: 782px;
+    background-color: v.$color_brow;
 
-.our-products{
-height: 782px;
-background-color: v.$color_brow;
+    &__info {
+        height: 220px;
+        @include m.d-flex(space-between, center, nowrap, row, 36px, 0);
 
-&__info{
-    height: 220px;
-        @include m.d-flex(space-between,center,nowrap,row,36px,0);
-    &-head{
-        padding:  80px 0 0 142px;
-        @include m.d-flex(center,start,nowrap,column,0,8px);
+        &-head {
+            padding: 80px 0 0 142px;
+            @include m.d-flex(center, start, nowrap, column, 0, 8px);
 
-    &__title{
-        @include m.font(24px,400,v.$color_lime);
-    }
+            &__title {
+                @include m.font(24px, 400, v.$color_lime);
 
-    &__description{
-        @include m.font(48px,800,v.$color_lime);
+                @media (max-width: v.$media_md) {
+                    display: none;
+                }
 
-    }
+                &-second {
+                    display: none;
 
-    &__button{
-        width: 150px;
-        height: 50px;
-        border-radius: 12px;
-        margin: 30px 142px 0 0 ;
-        background-color: v.$color_lime;
-        @include m.d-flex(center,center,nowrap,row,0,0);
-        @extend %hover-button-peach;
-        cursor: pointer;
-    }
-}
-}
-&__cards{
-    @include m.d-flex(center,start,nowrap,row,100px,0);
+                    @media (max-width: v.$media_md) {
+                        display: block;
+                        @include m.font(24px, 300, v.$color_lime);
+                    }
+                }
+            }
 
+            &__description {
+                @include m.font(48px, 800, v.$color_lime);
 
-    &-loff{
-        background: url("/assets/img/loff.webp")no-repeat center center;
-    }
-    &-sofa{
-        width: 350px;
-        height: 470px;
-        border-radius: 20px;
-        padding: 0 0 25px 24px;
-        background: url(/assets/img/sofa.webp)no-repeat center center;
-        box-shadow: 0 0 30px v.$color_lime;
-    @include m.d-flex(end,start,nowrap,column,0,0);
+                @media (max-width: v.$media_lg) {
+                    @include m.font(45px, 800, v.$color_lime);
+                }
 
-        .sofa-price{
-            width: 90px;
-            height: 50px;
-            text-align: center;
-            border-radius: 12px;
-            padding: 10px 0 0 0;
-            @include m.font(24px,400,v.$color_brow);
-            background-color: rgba($color: white, $alpha: 50%);
+                @media (max-width: v.$media_md) {
+                    @include m.font(30px, 800, v.$color_lime);
+                }
+            }
+
+            &__button {
+                width: 150px;
+                height: 50px;
+                border-radius: 12px;
+                margin: 30px 142px 0 0;
+                background-color: v.$color_lime;
+                @include m.d-flex(center, center, nowrap, row, 0, 0);
+                @extend %hover-button-peach;
+                cursor: pointer;
+
+                @media (max-width: v.$media_xl) {
+                    margin: 30px 95px 0 0;
+                }
+
+                @media (max-width: v.$media_sm) {
+                    margin: 15px 0 0 0;
+                }
+            }
+
+            @media (max-width: v.$media_sm) {
+                padding: 0;
+            }
         }
-        .sofa-description{
-            @include m.font(48px,300,v.$color_white);
+
+        @media (max-width: v.$media_xl) {
+            @include m.d-flex(space-between, end, nowrap, row, 36px, 0);
+            padding: 0 0 25px 0;
         }
 
-    }
-    &-table{
-        background: url("/assets/img/table.webp")no-repeat center center;
+        @media (max-width: v.$media_xl) {
+            @include m.d-flex(space-between, end, nowrap, row, 36px, 0);
+            padding: 0 0 35px 0;
+        }
 
+        @media (max-width: v.$media_sm) {
+            @include m.d-flex(center, center, nowrap, row, 36px, 0);
+            padding: 0 0 0 0;
+        }
+        @media (max-width: v.$media_min) {
+            padding: 0 10px 0 15px;
+        }
     }
-    &-shelf{
-        background: url("/assets/img/shelf.webp")no-repeat center center;
 
+    &__cards {
+        height: 480px;
+        @include m.d-flex(center, start, nowrap, row, 100px, 0);
+
+        &-loff {
+            background: url("/assets/img/loff.webp") no-repeat center center;
+            border-radius: 20px;
+            padding: 0 0 25px 24px;
+            transition: 0.3s ease;
+
+            &:hover {
+                width: 300px;
+                height: 460px;
+                box-shadow: 0 0 30px v.$color_lime;
+            }
+
+            &:hover .loff-price,
+            &:hover .loff-description {
+                display: block;
+            }
+
+            @include m.d-flex(end, start, nowrap, column, 0, 0);
+
+            .loff-price {
+                display: none;
+                width: 90px;
+                height: 50px;
+                text-align: center;
+                border-radius: 12px;
+                padding: 10px 0 0 0;
+                @include m.font(24px, 400, v.$color_brow);
+                background-color: rgba($color: white, $alpha: 50%);
+            }
+
+            .loff-description {
+                display: none;
+                @include m.font(48px, 300, v.$color_white);
+            }
+        }
+
+        &-sofa {
+            background: url("/assets/img/sofa.webp") no-repeat center center;
+            border-radius: 20px;
+            padding: 0 0 25px 24px;
+            transition: 0.3s ease;
+
+            &:hover {
+                width: 300px;
+                height: 470px;
+                box-shadow: 0 0 30px v.$color_lime;
+            }
+
+            &:hover .sofa-price,
+            &:hover .sofa-description {
+                display: block;
+            }
+
+            @include m.d-flex(end, start, nowrap, column, 0, 0);
+
+            .sofa-price {
+                display: none;
+                width: 90px;
+                height: 50px;
+                text-align: center;
+                border-radius: 12px;
+                padding: 10px 0 0 0;
+                @include m.font(24px, 400, v.$color_brow);
+                background-color: rgba($color: white, $alpha: 50%);
+            }
+
+            .sofa-description {
+                display: none;
+                @include m.font(48px, 300, v.$color_white);
+            }
+        }
+
+        &-table {
+            background: url("/assets/img/table.webp") no-repeat center center;
+            border-radius: 20px;
+            padding: 0 0 25px 24px;
+            transition: 0.3s ease;
+
+            &:hover {
+                width: 300px;
+                height: 470px;
+                box-shadow: 0 0 30px v.$color_lime;
+            }
+
+            &:hover .table-price,
+            &:hover .table-description {
+                display: block;
+            }
+
+            @include m.d-flex(end, start, nowrap, column, 0, 0);
+
+            .table-price {
+                display: none;
+                width: 90px;
+                height: 50px;
+                text-align: center;
+                border-radius: 12px;
+                padding: 10px 0 0 0;
+                @include m.font(24px, 400, v.$color_brow);
+                background-color: rgba($color: white, $alpha: 50%);
+            }
+
+            .table-description {
+                display: none;
+                @include m.font(48px, 300, v.$color_white);
+            }
+
+            @media (max-width: v.$media_md) {
+                display: none;
+            }
+        }
+
+        &-shelf {
+            background: url("/assets/img/shelf.webp") no-repeat center center;
+            border-radius: 20px;
+            padding: 0 0 25px 24px;
+            transition: 0.3s ease;
+
+            &:hover {
+                width: 300px;
+                height: 470px;
+                box-shadow: 0 0 30px v.$color_lime;
+            }
+
+            &:hover .shelf-price,
+            &:hover .shelf-description {
+                display: block;
+            }
+
+            @include m.d-flex(end, start, nowrap, column, 0, 0);
+
+            .shelf-price {
+                display: none;
+                width: 90px;
+                height: 50px;
+                text-align: center;
+                border-radius: 12px;
+                padding: 10px 0 0 0;
+                @include m.font(24px, 400, v.$color_brow);
+                background-color: rgba($color: white, $alpha: 50%);
+            }
+
+            .shelf-description {
+                display: none;
+                @include m.font(48px, 300, v.$color_white);
+            }
+
+            @media (max-width: v.$media_md) {
+                display: none;
+            }
+        }
+
+        @media (max-width: v.$media_xxl) {
+            height:490px ;
+            padding: 0 15px 0 15px;
+        }
+
+        @media (max-width: v.$media_sm) {
+        @include m.d-flex(center, start, nowrap, row, 50px, 0);
+
+        }
     }
-}
-    &__toggle{
-        padding: 0 141px 0 0;
-    @include m.d-flex(end,end,nowrap,row,36px,0);
-        &-left{
+
+    &__toggle {
+        padding: 0 140px 15px 0;
+        @include m.d-flex(end, end, nowrap, row, 36px, 0);
+
+        &-left {
             transform: rotate(180deg);
         }
 
-        &-button{
-    @include m.d-flex(center,center);
-    background-color: v.$color_lime;
-    border: none;
-    border-radius: 30px;
-    width: 56px;
-    height: 56px;
-    cursor: pointer;
-        @extend %hover-button-peach;
-            
+        &-button {
+            @include m.d-flex(center, center);
+            background-color: v.$color_lime;
+            border: none;
+            border-radius: 30px;
+            width: 56px;
+            height: 56px;
+            cursor: pointer;
+            @extend %hover-button-peach;
         }
+
+        @media (max-width: v.$media_xxl) {
+            padding: 0 140px 15px 0;
+        }
+        @media (max-width: v.$media_xl) {
+            padding: 0 140px 10px 0;
+        }
+        @media (max-width: v.$media_lg) {
+            padding: 0 140px 10px 0;
+        }
+        @media (max-width: v.$media_md) {
+            display: none;
+        }
+        
     }
 }
 
-.card{
+.card {
     border-radius: 20px;
     width: 300px;
     height: 440px;
-            box-shadow: 0 0 30px v.$color_black;
-
+    box-shadow: 0 0 30px v.$color_black;
 }
 
-
-.toggle{
+.toggle {
     width: 24px;
     height: 24px;
 }

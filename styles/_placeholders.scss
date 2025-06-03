@@ -12,7 +12,7 @@
     transition: 0.4s ease;
 
     &:hover {
-        font-size: 35px ;
+        transform: scale(1.5);
         font-weight: 800;
         color: v.$color_lime;
         text-shadow: 0 0 10px v.$color_black;
@@ -42,6 +42,5 @@
     width: 40px;
     height: 40px;
 }
-
 
 
