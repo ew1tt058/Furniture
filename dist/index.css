@@ -402,7 +402,7 @@
 }
 
 .hero__review {
-  background: url(/assets/img/background.webp) no-repeat center/cover;
+  background: url(../assets/img/background.webp) no-repeat center/cover;
   width: 100%;
   max-width: 670px;
   height: 710px;
@@ -422,7 +422,6 @@
     height: 420px;
     max-width: 100%;
     padding: 0 0 0 16px;
-    background: url(/assets/img/background.webp) no-repeat center/cover;
   }
 }
 .hero__review-highlighted {
@@ -1024,10 +1023,10 @@ html {
   row-gap: 0;
 }
 .our-products__cards-loff {
-  background: url("/assets/img/loff.webp") no-repeat center center;
   border-radius: 20px;
   padding: 0 0 25px 24px;
   transition: 0.3s ease;
+  background: url("../assets/img/loff.webp") no-repeat center center;
   display: flex;
   justify-content: end;
   align-items: start;
@@ -1065,10 +1064,10 @@ html {
   color: white;
 }
 .our-products__cards-sofa {
-  background: url("/assets/img/sofa.webp") no-repeat center center;
   border-radius: 20px;
   padding: 0 0 25px 24px;
   transition: 0.3s ease;
+  background: url("../assets/img/sofa.webp") no-repeat center center;
   display: flex;
   justify-content: end;
   align-items: start;
@@ -1106,10 +1105,10 @@ html {
   color: white;
 }
 .our-products__cards-table {
-  background: url("/assets/img/table.webp") no-repeat center center;
   border-radius: 20px;
   padding: 0 0 25px 24px;
   transition: 0.3s ease;
+  background: url("../assets/img/table.webp") no-repeat center center;
   display: flex;
   justify-content: end;
   align-items: start;
@@ -1152,10 +1151,10 @@ html {
   }
 }
 .our-products__cards-shelf {
-  background: url("/assets/img/shelf.webp") no-repeat center center;
   border-radius: 20px;
   padding: 0 0 25px 24px;
   transition: 0.3s ease;
+  background: url("../assets/img/shelf.webp") no-repeat center center;
   display: flex;
   justify-content: end;
   align-items: start;
@@ -1780,7 +1779,7 @@ html {
   width: 150px;
   height: 520px;
   border-radius: 12px;
-  background: url(../assets/img/modern.webp) no-repeat center center;
+  background: url("../assets/img/modern.webp") no-repeat center center;
 }
 @media (max-width: 992px) {
   .recommendation__cards-modern {
@@ -1791,14 +1790,14 @@ html {
 }
 @media (max-width: 428px) {
   .recommendation__cards-modern {
-    background: url(../assets/img/modern.webp) no-repeat center center/contain;
+    background: url("../assets/img/modern.webp") no-repeat center center/contain;
   }
 }
 .recommendation__cards-cozy {
   width: 150px;
   height: 520px;
   border-radius: 12px;
-  background: url(../assets/img/cozy.webp) no-repeat center center;
+  background: url("../assets/img/cozy.webp") no-repeat center center;
   transition: 0.3s ease;
 }
 @media (max-width: 992px) {
@@ -1812,7 +1811,7 @@ html {
   width: 470px;
   height: 520px;
   border-radius: 12px;
-  background: url(../assets/img/creative.webp) no-repeat center center/contain;
+  background: url("../assets/img/creative.webp") no-repeat center center/contain;
 }
 @media (max-width: 992px) {
   .recommendation__cards-creative {

@@ -20,7 +20,7 @@
             width: 150px;
             height: 520px;
             border-radius: 12px;
-            background: url(assets/img/modern.webp) no-repeat center center;
+            background: url("../assets/img/modern.webp") no-repeat center center;
 
             @media (max-width:v.$media_lg) {
                 width: 200px;
@@ -29,7 +29,7 @@
             }
             @media (max-width:v.$media_min) {
 
-                background: url(assets/img/modern.webp) no-repeat center center/ contain;
+                background: url("../assets/img/modern.webp") no-repeat center center/ contain;
 
             }
         }
@@ -38,7 +38,7 @@
             width: 150px;
             height: 520px;
             border-radius: 12px;
-            background: url(assets/img/cozy.webp) no-repeat center center;
+            background: url("../assets/img/cozy.webp") no-repeat center center;
             transition: 0.3s ease;
 
             @media (max-width:v.$media_lg) {
@@ -52,7 +52,7 @@
             width: 470px;
             height: 520px;
             border-radius: 12px;
-            background: url(assets/img/creative.webp) no-repeat center center/ contain;
+            background: url("../assets/img/creative.webp") no-repeat center center/ contain;
 
             @media (max-width:v.$media_lg) {
                 width: 220px;
