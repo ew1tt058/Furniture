@@ -56,11 +56,11 @@
     }
     
         @media (max-width: v.$media_sm) {
-            width: 500px;
+            width: 100%;
+            word-spacing: 0;
+            text-align: center;
             white-space: wrap;
-            word-spacing: 6px;
-            padding: 0 0 0 30px;
-            @include m.font(30px, 500, v.$color_lime);
+            @include m.font(20px, 300, v.$color_lime);
     }
 
         @media (max-width: v.$media_min) {
@@ -97,14 +97,21 @@
         grid-template-columns: repeat(2, 0.4fr);
     }
     @media (max-width: v.$media_sm) {
-        row-gap: 25px;
-        @include m.font(20px, 400, v.$color_lime);
+        row-gap: 15px;
+        white-space: wrap;
+        align-items: center;
+        grid-template-columns: repeat(2, 0.3fr);
+        @include m.font(20px, 200, v.$color_lime);
 
     }
     @media (max-width: v.$media_min) {
         row-gap: 25px;
         @include m.font(14px, 400, v.$color_lime);
 
+    }
+
+    @media (max-width:v.$media_mini){
+            grid-template-columns: repeat(2, 0.2fr);
     }
 }
 

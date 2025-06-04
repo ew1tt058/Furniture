@@ -29,7 +29,7 @@
             }
             @media (max-width:v.$media_min) {
 
-                background: url("../assets/img/modern.webp") no-repeat center center/ contain;
+                background: url("../assets/img/modern.webp") no-repeat center center;
 
             }
         }
@@ -52,10 +52,16 @@
             width: 470px;
             height: 520px;
             border-radius: 12px;
-            background: url("../assets/img/creative.webp") no-repeat center center/ contain;
+            background: url("../assets/img/creative.webp") no-repeat center center;
 
             @media (max-width:v.$media_lg) {
                 width: 220px;
+                height: 200px;
+                border-radius: 12px;
+                
+            }
+            @media (max-width:v.$media_min) {
+                width: 200px;
                 height: 200px;
                 border-radius: 12px;
                 
@@ -144,11 +150,20 @@
                     @media(max-width:v.$media_min) {
                         width: 380px;
                         height: 80px;
-
+                    }
+                    @media(max-width:v.$media_mini) {
+                    @include m.font(14px, 400, v.$color_black);
+                        width: 100%;
+                        height: 80px;
                     }
                 }
 
+                @media(max-width:v.$media_mini) {
+                        width: 350px;
+                        
+                    }
             }
+            
         }
 
         @media (max-width:v.$media_lg) {
@@ -178,6 +193,11 @@
     @media (max-width:v.$media_min) {
         width: 350px;
         height: 62px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+    @media (max-width:v.$media_mini) {
+        width: 320px;
+        height: 60px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     }
 }

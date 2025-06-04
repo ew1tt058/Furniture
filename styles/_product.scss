@@ -59,12 +59,12 @@
                 }
 
                 @media (max-width: v.$media_sm) {
-                    margin: 15px 0 0 0;
+                    margin: 15px 10px 0 0;
                 }
             }
 
             @media (max-width: v.$media_sm) {
-                padding: 0;
+                padding: 0 0 0 10px;
             }
         }
 

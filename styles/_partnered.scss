@@ -76,6 +76,14 @@ height: 40px;
         grid-template-columns: repeat(2,0fr);
         }
 
+@media (max-width:v.$media_mini){
+        display: grid;
+        row-gap: 15px;
+        grid-template-columns: repeat(2,0fr);
+        column-gap: 45px;
+        }
+
+
 &-gusto{
     width: 110px;
     height: 50px;

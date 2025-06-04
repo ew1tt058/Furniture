@@ -24,6 +24,10 @@
             height: 20px;
             margin: 0 12px 0 0;
         }
+    @media (max-width:v.$media_mini){
+            height: 500px;
+            @include m.d-flex(center, center, nowrap, column, 0, 30px);
+    }
     }
 
     &-description {
@@ -38,6 +42,12 @@
                 padding: 0 0 0 25px;
         }
 
+        @media (max-width:v.$media_mini){
+        @include m.font(42px, 800, v.$color_brow);
+
+        }
+
+        
     }
 
     &-buttons {
@@ -45,7 +55,12 @@
         @media (max-width:v.$media_md){
             @include m.d-flex(center, center, nowrap, column, 25px, 0);
 
+        }
+        @media (max-width:v.$media_mini){
+            @include m.d-flex(center, center, nowrap, column,0, 15px);
+
     }
+
     }
 }
 
@@ -90,6 +105,11 @@
 
 .desc__furniture {
     @include m.font(72px, 800, v.$color_lightbrow);
+
+    @media (max-width:v.$media_mini){
+        @include m.font(42px, 800, v.$color_lightbrow);
+
+        }
 }
 
 .hero__review {

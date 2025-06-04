@@ -25,8 +25,11 @@
                 width: 600px;
         }
             @media (max-width:v.$media_sm){
+                width: 100%;
+                text-align: center;
+                padding: 0 10px 0 10px;
                 @include m.font(24px,600,v.$color_brow);
-                width: 500px;
+
         }
             @media (max-width:v.$media_min){
                 @include m.font(28px,600,v.$color_brow);
@@ -49,7 +52,8 @@
             
 
             @media (max-width:v.$media_sm){
-                width: 400px;
+                
+                width: 300px;
                 height: 60px;
                 padding: 0;
         }
@@ -59,7 +63,18 @@
                 padding: 0;
         }
 
+            &::placeholder{
+            @media (max-width:v.$media_sm){
+            @include m.font(25px,300,v.$color_grey);
         }
+            @media (max-width:v.$media_mini){
+                text-align: center;
+            @include m.font(20px,300,v.$color_grey);
+        }
+        
+            }
+        }
+        
         &__button{
             width: 80px;
             height: 80px;
