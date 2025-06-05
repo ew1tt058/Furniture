@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is landing page about furniture. Fast delivery">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="./assets/img/background.webp">
     <link rel="stylesheet" href="dist/index.css">
     <link rel="icon" href="assets/sprites.svg#icon">
     <title>Furniture</title>
@@ -29,11 +29,11 @@
                 </div>
 
                 <div class="nav__title">
-                    <h1 href="#" class="nav__title-link">Dekoor</h1>
+                    <h1 href="#" class="nav__title-link" aria-label="navigation title">Dekoor</h1>
                 </div>
 
 
-                <div class="nav__links">
+                <div class="nav__links" aria-label="header">
                     <ul class="nav__links-list " aria-label="header nav links">
                         <li class="nav__links-item about">
                             <a href="#about-us" class="nav__links-list">About us</a>
@@ -54,14 +54,14 @@
                     <button class="nav__buttons-signup" aria-label="navigation button sign up">Sign Up</button>
                     <div class="nav__buttons-icon ">
                         <a href="#" class="nav__buttons-basked basked" aria-label="navigation button basked">
-                            <svg class="basked-icon">
+                            <svg class="basked-icon" aria-label="basked icon">
                                 <use class="basket-img" href="assets/sprites.svg#basket"></use>
                             </svg>
                         </a>
                     </div>
                 </div>
-                <div class="header__nav-mobile__navigation">
-                        <svg class="mobile__nav">
+                <div class="header__nav-mobile__navigation" aria-label="mobile navigation">
+                        <svg class="mobile__nav" aria-label="mobile navigation icon">
                             <use class="mobile__nav-icon" href="assets/sprites.svg#burger"></use>
                         </svg>
                 </div>
@@ -69,22 +69,24 @@
 
         </div>
     </header>
-    <div class="landing__page-content">
-        <section class="hero__container hero">
+    <div class="landing__page-content" aria-label="Content">
+        <section class="hero__container hero" aria-label="Hero content">
             <div class="hero__container-title ">
-                <p class="hero__container-description ">The kind of <span class="desc__furniture">furniture</span> you
+                <p class="hero__container-description">The kind of <span class="desc__furniture">furniture</span> you
                     have been looking for</p>
                 <div class="hero__container-buttons">
-                    <a href="#" class="buttons__catalog catalog"><svg class="catalog__icon catalog">
+                    <a href="#" class="buttons__catalog catalog" aria-label="Search catalog">
+                        <svg class="catalog__icon catalog">
                             <use class="catalog__search-icon" href="assets/sprites.svg#search"></use>
                         </svg>SEARCH CATALOG</a>
-                    <a href="#" class="buttons__watch"><svg class="catalog__icon catalog">
+                    <a href="#" class="buttons__watch" aria-label="Watch video">
+                        <svg class="catalog__icon catalog">
                             <use class="catalog__search-icon" href="assets/sprites.svg#watch"></use>
                         </svg>WATCH VIDEO</a>
                 </div>
             </div>
 
-            <div class="hero__review ">
+            <div class="hero__review">
                 <div class="hero__review-highlighted">HIGHLIGHTED PRODUCT</div>
                 <div class="hero__review-price">$329</div>
                 <p class="hero__review-description">Pösht Sofa</p>
@@ -94,8 +96,8 @@
             </div>
         </section>
 
-        <main class="main__content">
-            <section id="about-us" class="why__us">
+        <main class="main__content" aria-label="Main Content">
+            <section id="about-us" class="why__us" aria-label="Why choose us?">
                 <div class="why__us-title">WHY CHOOSE US?</div>
                 <div class="why__us-description">We care about details and the quality of our products</div>
                 <div class="why__us-experience experience">
@@ -115,12 +117,12 @@
                     </div>
                 </div>
             </section>
-            <section id="partnership" class="partnered__container">
+            <section id="partnership" class="partnered__container" aria-label="Partnership content">
                 <div class="partnered__content">
-                    <h2 class="partnered__content-title">
+                    <h2 class="partnered__content-title" aria-label="Partner title" >
                         <p class="partnered__content-sum">25+</p>
                     </h2>
-                    <div class="partnered__content-description">
+                    <div class="partnered__content-description" aria-label="Partner brands">
                         <p class="partnered__content-text">PARTNERED BRANDS</p>
                     </div>
                 </div>
@@ -139,13 +141,13 @@
                     </svg>
                 </div>
             </section>
-            <section class="recommendation">
+            <section class="recommendation" aria-label="Recommendations content">
                 <div class="recommendation__cards">
                     <div class="recommendation__cards-modern"></div>
-                    <div class="recommendation__cards-cozy "></div>
-                    <div class="recommendation__cards-creative "></div>
+                    <div class="recommendation__cards-cozy" ></div>
+                    <div class="recommendation__cards-creative"></div>
                 </div>
-                <div class="recommendation__furniture">
+                <div class="recommendation__furniture" aria-label="Recommendations furniture">
                     <h3 class="recommendation__furniture-title">Categories</h3>
                     <p class="recommendation__furniture-description">Furniture Sets Recommendations</p>
                     <div class="recommendation__furniture-variables">
@@ -160,9 +162,9 @@
                     </div>
                 </div>
             </section>
-            <section id="furniture" class="our-products">
-                <div class="our-products__info">
-                    <div class="our-products__info-head">
+            <section id="furniture" class="our-products" aria-label="Our products">
+                <div class="our-products__info" aria-label="Our products information">
+                    <div  class="our-products__info-head" aria-label="Our products information head">
                         <h3 class="our-products__info-head__title">OUR PRODUCTS</h3>
                         <h3 class="our-products__info-head__title-second">Categories</h3>
                         <p class="our-products__info-head__description">This month’s best seller</p>
@@ -189,28 +191,28 @@
                     </div>
                     
                 </div>
-                <div class="our-products__toggle">
-                    <button class="our-products__toggle-button">
+                <div class="our-products__toggle" aria-label="Our products toggle">
+                    <button class="our-products__toggle-button" aria-label="Our products toggle button left">
                         <svg class="our-products__toggle-left toggle">
                             <use class="toggle-left" href="assets/sprites.svg#chevron-blk"></use>
                         </svg>
                     </button>
-                    <button class="our-products__toggle-button">
+                    <button class="our-products__toggle-button" aria-label="Our products toggle button right">
                         <svg class="our-products__toggle-right toggle">
                             <use class="toggle-right" href="assets/sprites.svg#chevron-blk"></use>
                         </svg>
                     </button>
                 </div>
             </section>
-            <section id="contact" class="deals">
+            <section id="contact" class="deals" aria-label="Deals section">
                 <div class="deals-info">
                     <h3 class="deals-info__title">LIMITED DEALS</h3>
                     <p class="deals-info__description">Become a member and get 10% off of your first purchase</p>
                 </div>
-                <form class="deals-contact">
-                    <input type="email" class="deals-contact__email" placeholder="Enter your email here" required>
-                    <button type="submit" class="deals-contact__button">
-                        <svg class="deals-contact__button-icon">
+                <form class="deals-contact" aria-label="Deals contact">
+                    <input type="email" class="deals-contact__email" placeholder="Enter your email here" required aria-label="Deals contact email">
+                    <button type="submit" class="deals-contact__button" aria-label="Deals contact submit button">
+                        <svg class="deals-contact__button-icon" aria-label="Deals  submit button icon">
                             <use width="30" height="20" class="deals-contact__button-icon"
                                 href="assets/sprites.svg#email">
                             </use>
@@ -219,10 +221,10 @@
                 </form>
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer-brand">
-                <div class="footer-brand__title">
-                    <svg class="footer-brand__icon" aria-label="header icon preview">
+        <footer class="footer" aria-label="Footer content">
+            <div class="footer-brand" aria-label="Footer brand">
+                <div class="footer-brand__title" aria-label="Footer brand title">
+                    <svg class="footer-brand__icon" aria-label="header icon preview" aria-label="Footer brand icon">
                         <use href="assets/sprites.svg#icon"> </use>
                     </svg>
                     <p class="footer-brand__title-name">Dekoor</p>
@@ -233,23 +235,23 @@
                     <div class="footer-brand__copyright">©Copyright 2025 Dekoor</div>
             </div>
 
-            <div class="footer-nav">
-                <ul class="footer-nav__info-support info">
-                    <h3 class="footer-nav__support title"><a href="#">Support</a></h3>
+            <div class="footer-nav" aria-label="Footer brand navigation">
+                <ul class="footer-nav__info-support info" aria-label="Footer brand navigation support">
+                    <li class="footer-nav__support title"><a href="#">Support</a></li>
                     <li class="footer-nav__info-selection__faq list"><a href="#">FAQ</a></li>
                     <li class="footer-nav__info-selection__shipping list"><a href="#">Shipping & Returns</a></li>
                     <li class="footer-nav__info-selection__care list"><a href="#">Care guide</a></li>
                     <li class="footer-nav__info-selection__reddem list"><a href="#">Redeem warranty</a></li>
                 </ul>
-                <ul class="footer-nav__info-social info">
-                    <h3 class="footer-nav__social title"><a>Social media</a></h3>
+                <ul class="footer-nav__info-social info" aria-label="Footer brand navigation support">
+                    <li class="footer-nav__social title"><a href="#" >Social media</a></li>
                     <li class="footer-nav__info-selection__instagram list"><a href="#">Instagram</a></li>
                     <li class="footer-nav__info-selection__facebook list"><a href="#">Facebook</a></li>
                     <li class="footer-nav__info-selection__twitter list"><a href="#">Twitter</a></li>
                     <li class="footer-nav__info-selection__tiktok list"><a href="#">TikTok</a></li>
                 </ul>
-                <ul class="footer-nav__info-about info">
-                    <h3 class="footer-nav__about title"><a href="#">About Us</a></h3>
+                <ul class="footer-nav__info-about info" aria-label="Footer brand navigation support">
+                    <li class="footer-nav__about title"><a href="#">About Us</a></li>
                     <li class="footer-nav__info-selection__faq list"><a href="#">Our Story</a></li>
                     <li class="footer-nav__info-selection__shipping list"><a href="#">Designer</a></li>
                     <li class="footer-nav__info-selection__care list"><a href="#">Craftmanship</a></li>
